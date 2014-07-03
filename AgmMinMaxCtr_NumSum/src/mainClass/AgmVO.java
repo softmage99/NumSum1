@@ -10,14 +10,9 @@ public class AgmVO implements Writable{
 
 	private Double maxDif=0.0d;
 	private Double minDif=0.0d;
-	private int ctr=0;
+	private Integer ctr= new Integer(0);
 	
-	public int getCtr() {
-		return ctr;
-	}
-	public void setCtr(int ctr) {
-		this.ctr = ctr;
-	}
+	
 	
 	public String toString(){
 		return "min = "+minDif+" max = "+ maxDif+" ctr = "+ctr;
@@ -48,6 +43,12 @@ public class AgmVO implements Writable{
 	}
 	public void setMinDif(Double minDif) {
 		this.minDif = minDif;
+	}
+	public Integer getCtr() {
+		return ctr;
+	}
+	public void setCtr(Integer ctr) {
+		this.ctr = ctr;
 	}
 	
 }
